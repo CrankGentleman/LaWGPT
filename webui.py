@@ -196,12 +196,7 @@ def main(
             ),
             gr.components.Checkbox(label="Stream output",  value=True),
         ],
-        outputs=[
-            gr.inputs.Textbox(
-                lines=8,
-                label="Output",
-            )
-        ],
+        outputs = gr.Textbox(label="Output Box"),
         title="🦙🌲 LaWGPT",
         description="",
     ).queue().launch(server_name="0.0.0.0", share=share_gradio)
